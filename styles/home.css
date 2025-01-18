@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+}
+
+main {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #405712;
+}
+
+.mainBtn {
+  width: 140px;
+  height: 50px;
+  background-color: #DAA520;
+  color: #FAFAFA;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.mainBtn:hover {
+  transform: scale(1.1);
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+  background-image: url("/images/hero.png");
+  background-size: cover;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+header #hero {
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  align-items: center;
+  margin-top: 10%;
+  gap: 50px;
+}
+header #hero h1 {
+  font-weight: 700;
+  color: #405712;
+  text-align: center;
+  width: 80%;
+}
+header #hero #heroBtnsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header #hero #heroBtnsContainer button {
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+header #hero #heroBtnsContainer #donateBtn {
+  color: #FAFAFA;
+  background-color: #DAA520;
+  transition: all 0.5s;
+}
+header #hero #heroBtnsContainer #donateBtn:hover {
+  transform: scale(1.1);
+}
+header #hero #heroBtnsContainer #aboutBtn {
+  border: 3px solid #DAA520;
+  background-color: transparent;
+  color: #DAA520;
+  transition: all 0.5s;
+}
+header #hero #heroBtnsContainer #aboutBtn:hover {
+  transform: scale(1.1);
+}
+
+#ourMission {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15% 0 15%;
+  gap: 10%;
+  align-items: center;
+}
+#ourMission .img {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+}
+#ourMission .img img {
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+#ourMission .img::before {
+  content: url("/images/Group 82.png");
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  top: -100;
+  left: -100px;
+  background-size: cover;
+  background-position: center;
+}
+#ourMission .content {
+  width: 80%;
+  text-align: right;
+}
+#ourMission .content p {
+  color: #405712;
+}
+
+#statisticsCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#statisticsCards .firstCard {
+  background: linear-gradient(rgba(163, 22, 34, 0.7529411765), rgba(163, 22, 34, 0.7529411765)), url("/images/statisticsImg3.jpeg");
+}
+#statisticsCards .secondCard {
+  background: linear-gradient(rgba(163, 22, 34, 0.7529411765), rgba(163, 22, 34, 0.7529411765)), url("/images/statisticsImg2.jpeg");
+}
+#statisticsCards .thirdCard {
+  background: linear-gradient(rgba(163, 22, 34, 0.7529411765), rgba(163, 22, 34, 0.7529411765)), url("/images/statisticsImg1.jpeg");
+}
+#statisticsCards .card {
+  width: 20%;
+  height: 325px;
+  border-radius: 30px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#statisticsCards .card p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FAFAFA;
+}
+
+#donateNow {
+  height: 360px;
+  background-color: #405712;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10% 0 5%;
+}
+#donateNow .img {
+  background-image: url("/images/girlImg.png");
+  mix-blend-mode: luminosity;
+  opacity: 0.6;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+#donateNow .content {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  color: #FAFAFA;
+}
+#donateNow .content p {
+  font-size: 2rem;
+}
+#donateNow .content p span {
+  font-size: 3rem;
+}
+#donateNow .content button {
+  height: 50px;
+  width: 35%;
+  border-radius: 30px;
+  color: #FAFAFA;
+  background-color: transparent;
+  border: 3px solid #DAA520;
+  transition: all 0.5s;
+}
+#donateNow .content button:hover {
+  transform: scale(1.1);
+}
+
+#giftSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#giftSection .content {
+  text-align: center;
+}
+#giftSection .content #giftImg {
+  margin-bottom: 3%;
+}
+#giftSection .content #giftInstructions {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 3% 0 3% 0;
+}
+
+@media (max-width: 426px) {
+  #giftSection .circle {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */

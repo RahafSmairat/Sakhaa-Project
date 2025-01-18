@@ -1,0 +1,53 @@
+@use "variables.scss" as vars;
+
+* {
+  font-family: vars.$fontFamily !important;
+}
+
+.navbar {
+  background-color: vars.$bodyColor !important;
+  padding: 0 0 0 2% !important;
+  border-radius: 30px !important;
+  height: 60px !important;
+  .navbar-brand {
+    width: 10% !important;
+    img {
+      width: 100% !important;
+    }
+  }
+
+  .navbar-nav {
+    .last-group {
+      order: 1;
+    }
+
+    .first-group {
+      order: 2;
+      gap: 30px !important;
+    }
+    a {
+      white-space: nowrap;
+      font-weight: 600;
+      color: vars.$primaryColor;
+      transition: all .5s;
+      &:hover{
+        color: vars.$secondaryColor;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .navbar-nav {
+    flex-direction: column-reverse !important;
+    .first-group {
+      flex-direction: column-reverse !important;
+      align-items: flex-end !important;
+    }
+    .last-group {
+      flex-direction: column-reverse !important;
+      align-items: flex-end !important;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+* {
+  font-family: "Cairo", serif !important;
+}
+
+.navbar {
+  background-color: #FAFAFA !important;
+  padding: 0 0 0 2% !important;
+  border-radius: 30px !important;
+  height: 60px !important;
+}
+.navbar .navbar-brand {
+  width: 10% !important;
+}
+.navbar .navbar-brand img {
+  width: 100% !important;
+}
+.navbar .navbar-nav .last-group {
+  order: 1;
+}
+.navbar .navbar-nav .first-group {
+  order: 2;
+  gap: 30px !important;
+}
+.navbar .navbar-nav a {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #405712;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav a:hover {
+  color: #DAA520;
+  transform: scale(1.1);
+}
+
+@media (max-width: 426px) {
+  .navbar-nav {
+    flex-direction: column-reverse !important;
+  }
+  .navbar-nav .first-group {
+    flex-direction: column-reverse !important;
+    align-items: flex-end !important;
+  }
+  .navbar-nav .last-group {
+    flex-direction: column-reverse !important;
+    align-items: flex-end !important;
+  }
+}/*# sourceMappingURL=navbar.css.map */
