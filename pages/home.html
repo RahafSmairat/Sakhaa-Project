@@ -34,75 +34,321 @@
 
     <!--Main-->
     <main>
-    <!--Our Mission Section-->    
-    <section id="ourMission">
-        <div class="content">
-            <h2>مهمتنا</h2>
-            <p>نحن نهدف إلى فتح أبواب العطاء للجميع، حيث نؤمن أن كل تبرع، مهما كان بسيطًا، يمكن أن يصنع فرقًا كبيرًا.
-                نحن نعمل على تسهيل عملية التبرع وجعلها تجربة مليئة بالإنسانية، من خلال ربط الأيادي السخية باحتياجات
-                المجتمع. مع سخاء، ليس العطاء مجرد واجب، بل هو فرصة لنشر الخير وزراعة الأمل في حياة الآخرين. شارك بسخاء
-                وكن جزءًا من قصة تغيير تمنح الحياة لمن هم في أمسّ الحاجة.</p>
+        <!--Our Mission Section-->
+        <section id="ourMission">
+            <div class="content">
+                <h2>مهمتنا</h2>
+                <p>نحن نهدف إلى فتح أبواب العطاء للجميع، حيث نؤمن أن كل تبرع، مهما كان بسيطًا، يمكن أن يصنع فرقًا
+                    كبيرًا.
+                    نحن نعمل على تسهيل عملية التبرع وجعلها تجربة مليئة بالإنسانية، من خلال ربط الأيادي السخية باحتياجات
+                    المجتمع. مع سخاء، ليس العطاء مجرد واجب، بل هو فرصة لنشر الخير وزراعة الأمل في حياة الآخرين. شارك
+                    بسخاء
+                    وكن جزءًا من قصة تغيير تمنح الحياة لمن هم في أمسّ الحاجة.</p>
                 <button class="mainBtn">المزيد</button>
-        </div>
-        <div class="img"><img src="/images/homeAbout.jpeg"></div>
-    </section>
+            </div>
+            <div class="image-container">
+                <img src="/images/homeAbout.jpeg" class="main-image" />
+            </div>
+        </section>
 
-    <!--Statistics Section-->
-    <section id="statisticsCards">
-        <div class="card firstCard">
-            <p>0</p>
-            <p>الفرص المتاحة</p>
-        </div>
-        <div class="card secondCard">
-            <p>0</p>
-            <p>الأسر المستفيدة</p>
-        </div>
-        <div class="card thirdCard">
-            <p>0</p>
-            <p>إجمالي التبرعات</p>
-        </div>
-    </section>
+        <!--Statistics Section-->
+        <section id="statisticsCards">
+            <div class="card firstCard">
+                <p>0</p>
+                <p>الفرص المتاحة</p>
+            </div>
+            <div class="card secondCard">
+                <p>0</p>
+                <p>الأسر المستفيدة</p>
+            </div>
+            <div class="card thirdCard">
+                <p>0</p>
+                <p>إجمالي التبرعات</p>
+            </div>
+        </section>
 
-    <!--Donate Now Section-->
-    <section id="donateNow">
-        <div class="img"></div>
-        <div class="content">
-            <p>كن سببًا في إضاءة حياة من حولك... <span>تبرع اليوم</span></p>
-            <button>تعرف إلى برامج التبرع</button>
-        </div>
-    </section>
+        <!--Donate Now Section-->
+        <section id="donateNow">
+            <div class="img"></div>
+            <div class="content">
+                <p>كن سببًا في إضاءة حياة من حولك... <span>تبرع اليوم</span></p>
+                <button>تعرف إلى برامج التبرع</button>
+            </div>
+        </section>
 
-    <!--Gift Section-->
-    <section id="giftSection">
-        <img src="/images/leftCircle.png" class="circle">
-        <div class="content">
-            <img src="/images/gift.png" id="giftImg">
-            <h2>أظهر محبّتك من خلال العطاء</h2>
-            <p>حول تبرعك إلى هدية مميزة! اختر المبلغ الذي ترغب في التبرع به واهدِه لمن تحب في مناسباتهم الخاصة أو لأي شخص يحتاج الدعم.</p>
-            <div id="giftInstructions">
-                <div>
-                    <img src="/images/money.png">
-                    <p>اختَر المبلغ</p>
+        <!--Gift Section-->
+        <section id="giftSection">
+            <img src="/images/leftCircle.png" class="circle">
+            <div class="content">
+                <img src="/images/gift.png" id="giftImg">
+                <h2>أظهر محبّتك من خلال العطاء</h2>
+                <p>حول تبرعك إلى هدية مميزة! اختر المبلغ الذي ترغب في التبرع به واهدِه لمن تحب في مناسباتهم الخاصة أو
+                    لأي شخص يحتاج الدعم.</p>
+                <div id="giftInstructions">
+                    <div>
+                        <img src="/images/money.png">
+                        <p>اختَر المبلغ</p>
+                    </div>
+                    <div>
+                        <img src="/images/love-letter.png">
+                        <p>أضِف رسالة</p>
+                    </div>
+                    <div>
+                        <img src="/images/gift-box.png">
+                        <p>اهدِ تبرّعك</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="/images/love-letter.png">
-                    <p>أضِف رسالة</p>
+                <button class="mainBtn">إهداء</button>
+            </div>
+            <img src="/images/rightCircle.png" class="circle">
+        </section>
+
+        <!--Success Stories Section-->
+        <!-- <section id="successStories">
+        <h2 style="text-align: right; padding: 10%;">أثر العطاء</h2>
+        <div class="container" style="display: grid; grid-template-columns: auto auto; grid-template-rows: 200px 200px;">
+            <img src="/images/successStories.png" style="grid-row: 1/2; grid-column: 2/3;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="grid-row: 1/2; grid-column: 1/2; background-color: yellow !important;">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div>
-                    <img src="/images/gift-box.png">
-                    <p>اهدِ تبرّعك</p>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p>Hello</p>
+                  </div>
+                  <div class="carousel-item">
+                    <p>It's<table></table></p>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Rahaf</p>
+                  </div>
+                </div>
+              </div>
+              <div style="grid-row: 2/3; grid-column: 1/2;">mwlvmd</div>
+        </div>
+    </section> -->
+
+        <section id="successStories" style="padding: 3%; background-color: #F5F5DC; color: white;">
+            <h2 style="text-align: right; margin: 0 6% 2% 0;">أثر العطاء</h2>
+            <div class="row justify-content-center">
+                <div class="col-8" style="margin-right: 2%;">
+                    <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                            style="margin-bottom: 2%; background-color: #405712; height: 200px; border-top-left-radius: 30px; border-bottom-right-radius: 30px;">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner" style="text-align: right; padding: 30px; direction: rtl;">
+                                <div class="carousel-item active">
+                                    <h5>شهادات من القلب</h5>
+                                    <p>
+                                        "إن هذه النصوص العشوائية تمثل مثالًا جيدًا لاستخدام النصوص في تصاميم المواقع.
+                                        فتُستخدم بشكل أساسي لغرض ملء المساحات وعرض التخطيطات المختلفة حتى يتم إدخال
+                                        النصوص الأصلية فيما بعد."
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5>شهادات من القلب</h5>
+                                    <p>
+                                        "إن هذه النصوص العشوائية تمثل مثالًا جيدًا لاستخدام النصوص في تصاميم المواقع.
+                                        فتُستخدم بشكل أساسي لغرض ملء المساحات وعرض التخطيطات المختلفة حتى يتم إدخال
+                                        النصوص الأصلية فيما بعد."
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5>شهادات من القلب</h5>
+                                    <p>
+                                        "إن هذه النصوص العشوائية تمثل مثالًا جيدًا لاستخدام النصوص في تصاميم المواقع.
+                                        فتُستخدم بشكل أساسي لغرض ملء المساحات وعرض التخطيطات المختلفة حتى يتم إدخال
+                                        النصوص الأصلية فيما بعد."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row"
+                        style="height: 200px; background-color: #DAA520; border-top-left-radius: 30px; border-bottom-right-radius: 30px;">
+                        <p style="text-align: right; direction: rtl; padding: 30px;">تتيح لك منصة سخاء إمكانية تتبع تبرعاتك خطوة بخطوة، لتشاهد الأثر
+                            الذي تُحدِثه في حياة المستفيدين بكل شفافية.</p>
+                    </div>
+                </div>
+                <img src="/images/successStories.png" class="col-4"
+                    style="height: 400px; width: 300px; border-top-left-radius: 30px; border-bottom-right-radius: 30px;">
+            </div>
+        </section>
+
+        <!-- <section id="newsCards">
+            <h2>آخر الأخبار</h2>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="/images/statisticsImg1.jpeg" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-end">
+                                <h5 class="card-title">عنوان الخبر</h5>
+                                <p class="card-text">من الممكن أن يكون التبديل بين النصوص الخاصة باللغة العربية والنصوص
+                                    الغربية أمرًا مربكًا عند تصميم مواقع شاملة. ولكن، باستخدام النصوص العربية العشوائية
+                                    يمكن خلق تجانس سلس بين النصوص ضمن التصميم العام من دون الحاجة إلى إدخال المحتوى
+                                    الكامل في البداية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="/images/statisticsImg2.jpeg" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-end">
+                                <h5 class="card-title">عنوان الخبر</h5>
+                                <p class="card-text">تعتبر عملية تقديم النصوص المؤقتة خطوة حاسمة عند تصميم النماذج
+                                    الأولية للمواقع. فهذا يضمن إمكانية تخصيص وتعديل القوائم، العناصر النمطية، والأزرار
+                                    دون الحاجة إلى انتظار المحتوى النهائي. هذه النصوص توفر البديل المثالي لتجربة أبعاد
+                                    النصوص في التنسيقات المختلفة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="/images/statisticsImg3.jpeg" class="card-img-top" alt="Card Image">
+                            <div class="card-body text-end">
+                                <h5 class="card-title">عنوان الخبر</h5>
+                                <p class="card-text">تعتبر التجارب الأولى في التصميمات البرمجية أمرًا حيويًا لاختبار
+                                    تنسيق النصوص وحجمها في الواجهات. قد تساعد هذه النصوص أيضًا في تحديد المسافات البينية
+                                    بين العناصر والتأكد من توازن الشكل العام للموقع. إن التنوع في الأحرف والمحتوى يؤدي
+                                    إلى إمكانية تقديم رؤية أفضل للمشروع.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="mainBtn">إهداء</button>
-        </div>
-        <img src="/images/rightCircle.png" class="circle">
-    </section>
+            <button>المزيد</button>
+        </section> -->
 
-    <!--Success Stories Section-->
-    <section>
+        <section id="newsCards">
+            <h2>آخر الأخبار</h2>
+            <div class="container">
 
-    </section>
+                <div class="posts">
 
+                    <div class="post">
+                        <div class="post__image post__image--1"></div>
+                        <div class="post__content">
+                            <div class="post__inside">
+                                <h3 class="post__title">عنوان الخبر</h3>
+                                <p class="post__excerpt">
+                                    من الملاحظ أن النصوص المُستخدمة في التطبيقات والمواقع الإلكترونية تحتوي عادة على
+                                    أفكار مرجعية تكون ذات معنى مؤقت. ولذا فمن الضروري اعتماد النماذج العشوائية لاختبار
+                                    تصميم المحتوى والتأكد من عدم التأثير على الجمالية من خلال استخدام نصوص موثوقة
+                                    وأصيلة.
+                                </p>
+                                <button class="btn--accent post__button">
+                                    المزيد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post__image post__image--2"></div>
+                        <div class="post__content">
+                            <div class="post__inside">
+                                <h3 class="post__title">عنوان الخبر</h3>
+                                <p class="post__excerpt">
+                                    من الممكن أن يكون التبديل بين النصوص الخاصة باللغة العربية والنصوص الغربية أمرًا
+                                    مربكًا عند تصميم مواقع شاملة. ولكن، باستخدام النصوص العربية العشوائية يمكن خلق تجانس
+                                    سلس بين النصوص ضمن التصميم العام من دون الحاجة إلى إدخال المحتوى الكامل في البداية.
+                                </p>
+                                <button class="btn--accent post__button">
+                                    المزيد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post__image post__image--3"></div>
+                        <div class="post__content">
+                            <div class="post__inside">
+                                <h3 class="post__title">عنوان الخبر</h3>
+                                <p class="post__excerpt">
+                                    إن هذه النصوص العشوائية تمثل مثالًا جيدًا لاستخدام النصوص في تصاميم المواقع.
+                                    فتُستخدم بشكل أساسي لغرض ملء المساحات وعرض التخطيطات المختلفة حتى يتم إدخال النصوص
+                                    الأصلية فيما بعد. قد يُستخدم هذا النص لتجربة تصميم النوافذ أو القوائم الجانبية في
+                                    الصفحات.
+                                </p>
+                                <button class="btn--accent post__button">
+                                    المزيد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post__image post__image--4"></div>
+                        <div class="post__content">
+                            <div class="post__inside">
+                                <h3 class="post__title">عنوان الخبر</h3>
+                                <p class="post__excerpt">
+                                    تعتبر التجارب الأولى في التصميمات البرمجية أمرًا حيويًا لاختبار تنسيق النصوص وحجمها
+                                    في الواجهات. قد تساعد هذه النصوص أيضًا في تحديد المسافات البينية بين العناصر والتأكد
+                                    من توازن الشكل العام للموقع. إن التنوع في الأحرف والمحتوى يؤدي إلى إمكانية تقديم
+                                    رؤية أفضل للمشروع.
+                                </p>
+                                <button class="btn--accent post__button">
+                                    المزيد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post__image post__image--5"></div>
+                        <div class="post__content">
+                            <div class="post__inside">
+                                <h3 class="post__title">عنوان الخبر</h3>
+                                <p class="post__excerpt">
+                                    إن استخدام نصوص عشوائية خلال مرحلة التطوير يساهم في اختبار تصميم الويب بشكل عملي
+                                    وواقعي. من خلال إدراج هذه النصوص المؤقتة، يمكن للمهندسين والمطورين التركيز على تنسيق
+                                    العناصر البصرية مثل الخطوط، والعناوين، والمسافات بين النصوص داخل الموقع.
+                                </p>
+                                <button class="btn--accent post__button">
+                                    المزيد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post__image post__image--6"></div>
+                        <div class="post__content">
+                            <div class="post__inside">
+                                <h3 class="post__title">عنوان الخبر</h3>
+                                <p class="post__excerpt">
+                                    من الملاحظ أن النصوص المُستخدمة في التطبيقات والمواقع الإلكترونية تحتوي عادة على
+                                    أفكار مرجعية تكون ذات معنى مؤقت. ولذا فمن الضروري اعتماد النماذج العشوائية لاختبار
+                                    تصميم المحتوى والتأكد من عدم التأثير على الجمالية من خلال استخدام نصوص موثوقة
+                                    وأصيلة.
+                                </p>
+                                <button class="btn--accent post__button">
+                                    المزيد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <div id="footer"></div>

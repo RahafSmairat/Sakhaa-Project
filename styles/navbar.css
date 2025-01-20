@@ -7,7 +7,6 @@
   background-color: #FAFAFA !important;
   padding: 0 0 0 2% !important;
   border-radius: 30px !important;
-  height: 60px !important;
 }
 .navbar .navbar-brand {
   width: 10% !important;
@@ -34,14 +33,14 @@
 }
 
 @media (max-width: 426px) {
-  .navbar-nav {
+  .navbar .navbar-nav {
     flex-direction: column-reverse !important;
   }
-  .navbar-nav .first-group {
+  .navbar .navbar-nav .first-group {
     flex-direction: column-reverse !important;
     align-items: flex-end !important;
   }
-  .navbar-nav .last-group {
+  .navbar .navbar-nav .last-group {
     flex-direction: column-reverse !important;
     align-items: flex-end !important;
   }

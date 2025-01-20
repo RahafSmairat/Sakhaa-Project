@@ -8,7 +8,7 @@
   background-color: vars.$bodyColor !important;
   padding: 0 0 0 2% !important;
   border-radius: 30px !important;
-  height: 60px !important;
+  // height: 60px !important;
   .navbar-brand {
     width: 10% !important;
     img {
@@ -39,7 +39,9 @@
 }
 
 @media (max-width: 426px) {
-  .navbar-nav {
+  .navbar{
+    // height: auto;
+      .navbar-nav {
     flex-direction: column-reverse !important;
     .first-group {
       flex-direction: column-reverse !important;
@@ -50,4 +52,6 @@
       align-items: flex-end !important;
     }
   }
+  }
+
 }
