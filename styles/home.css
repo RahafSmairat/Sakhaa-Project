@@ -47,7 +47,7 @@ h2 {
   transform: scale(1.1);
 }
 
-header {
+#homeHeader {
   width: 100%;
   height: 90vh;
   background-image: url("/images/hero.png");
@@ -56,7 +56,7 @@ header {
   padding-left: 1%;
   padding-right: 1%;
 }
-header #hero {
+#homeHeader #hero {
   display: flex;
   flex-direction: column;
   justify-self: right;
@@ -64,18 +64,18 @@ header #hero {
   margin-top: 10%;
   gap: 50px;
 }
-header #hero h1 {
+#homeHeader #hero h1 {
   font-weight: 700;
   color: #405712;
   text-align: center;
   width: 80%;
 }
-header #hero #heroBtnsContainer {
+#homeHeader #hero #heroBtnsContainer {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-header #hero #heroBtnsContainer button {
+#homeHeader #hero #heroBtnsContainer button {
   width: 180px;
   height: 50px;
   border: none;
@@ -83,21 +83,21 @@ header #hero #heroBtnsContainer button {
   font-weight: bold;
   font-size: 20px;
 }
-header #hero #heroBtnsContainer #donateBtn {
+#homeHeader #hero #heroBtnsContainer #donateBtn {
   color: #FAFAFA;
   background-color: #DAA520;
   transition: all 0.5s;
 }
-header #hero #heroBtnsContainer #donateBtn:hover {
+#homeHeader #hero #heroBtnsContainer #donateBtn:hover {
   transform: scale(1.1);
 }
-header #hero #heroBtnsContainer #aboutBtn {
+#homeHeader #hero #heroBtnsContainer #aboutBtn {
   border: 3px solid #DAA520;
   background-color: transparent;
   color: #DAA520;
   transition: all 0.5s;
 }
-header #hero #heroBtnsContainer #aboutBtn:hover {
+#homeHeader #hero #heroBtnsContainer #aboutBtn:hover {
   transform: scale(1.1);
 }
 
@@ -176,6 +176,10 @@ header #hero #heroBtnsContainer #aboutBtn:hover {
   flex-direction: column;
   justify-content: center;
 }
+#statisticsCards .card .number {
+  font-size: 3rem;
+  font-weight: 700;
+}
 #statisticsCards .card p {
   text-align: center;
   font-size: 2rem;
@@ -242,6 +246,9 @@ header #hero #heroBtnsContainer #aboutBtn:hover {
   margin: 3% 0 3% 0;
 }
 
+#newsCards {
+  margin-bottom: 5%;
+}
 #newsCards h2 {
   text-align: center !important;
 }

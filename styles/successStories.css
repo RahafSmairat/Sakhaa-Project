@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+#succssStories {
+  direction: rtl;
+  width: 90%;
+  justify-self: center;
+  margin: 10% 10%;
+  color: #405712;
+}
+#succssStories .story {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+}
+#succssStories .story:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+#succssStories .story h3 {
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+#succssStories .story .storyImgBorder {
+  border-radius: 50%;
+  width: 40%;
+  height: 75vh;
+  border: 3px dashed #A31621;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#succssStories .story .storyImgBorder img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #405712;
+}
+#succssStories .story .storyContent {
+  flex: 1;
+}/*# sourceMappingURL=successStories.css.map */

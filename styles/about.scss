@@ -1,0 +1,62 @@
+@use "variables.scss" as vars;
+
+#aboutUsContainer{
+    direction: rtl;
+    width: 90vw;
+    justify-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: vars.$primaryColor;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: vars.$bodyColor;
+    padding: 100px;
+    border-radius: 30px;
+    box-shadow: vars.$boxShadow;
+    .content{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+        gap: 2%;
+        h3{
+            border-left: 3px solid vars.$secondaryColor;
+            width: 130px;
+            height: 30px;
+            text-align: right;
+        }
+        p{
+            font-weight: 600;
+        }
+        #goalsImgs{
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            justify-self: center;
+            gap: 20%;
+            p{
+                margin-top: 20%;
+                text-align: center;
+            }
+        }
+    }
+    .cardsContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        margin-top: 5%;
+        .card{
+            width: 30%;
+            // height: 300px;
+            background-color: vars.$primaryColor;
+            text-align: center;
+            justify-content: center;
+            padding: 5%;
+            color: vars.$bodyColor;
+            box-shadow: vars.$boxShadow;
+            border-radius: 30px;
+        }
+    }
+}
+
+
