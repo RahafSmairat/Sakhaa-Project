@@ -26,7 +26,7 @@
   color: #FAFAFA;
   text-align: center;
   direction: rtl;
-  margin-bottom: 13%;
+  margin-bottom: 10%;
 }
 #loginContainer form {
   display: flex;
@@ -36,14 +36,22 @@
 }
 #loginContainer form input {
   width: 80%;
-  height: 45px;
+  height: 55px;
   border-radius: 30px;
   border: none;
   direction: rtl;
-  padding: 5%;
+  padding-right: 5%;
 }
-#loginContainer form p {
+#loginContainer form input:focus {
+  outline: none;
+  border: 3px solid #DAA520;
+  transform: scale(1.03);
+}
+#loginContainer form a {
   color: #FAFAFA;
+}
+#loginContainer form a:hover {
+  text-decoration: underline;
 }
 #loginContainer form button {
   width: 170px;

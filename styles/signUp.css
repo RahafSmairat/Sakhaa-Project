@@ -16,12 +16,13 @@
   z-index: 2;
   top: -150px;
   box-shadow: 0 0 10px #405712;
+  direction: rtl;
 }
 #signUpContainer h2 {
   color: #FAFAFA;
   text-align: center;
   direction: rtl;
-  margin-bottom: 13%;
+  margin-bottom: 10%;
 }
 #signUpContainer form {
   display: flex;
@@ -29,18 +30,26 @@
   align-items: center;
   gap: 20px;
 }
+#signUpContainer form .required {
+  color: red;
+}
 #signUpContainer form label {
   color: #FAFAFA;
-  direction: rtl;
-  justify-self: right !important;
+  align-self: start;
+  padding-right: 15%;
 }
-#signUpContainer form input {
+#signUpContainer form input, #signUpContainer form select {
   width: 80%;
-  height: 45px;
+  height: 55px;
   border-radius: 30px;
   border: none;
   direction: rtl;
-  padding: 5%;
+  padding-right: 5%;
+}
+#signUpContainer form input:focus, #signUpContainer form select:focus {
+  outline: none;
+  border: 3px solid #DAA520;
+  transform: scale(1.03);
 }
 #signUpContainer form p {
   color: #FAFAFA;

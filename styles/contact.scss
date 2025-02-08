@@ -46,17 +46,23 @@
     align-items: center;
     gap: 30px;
     margin: 5%;
+
     input {
-      border-radius: 10px;
+      width: 80%;
+      height: 55px;
+      border-radius: 30px;
       border: 1px solid vars.$primaryColor;
       direction: rtl;
-      width: 80%;
-      height: 45px;
-      padding: 2%;
+      padding-right: 5%;
       box-shadow: vars.$lightBoxShadow;
     }
+    input:focus, textarea:focus{
+      outline: none;
+      border: 3px solid vars.$secondaryColor;
+      transform: scale(1.03);
+    }
     textarea {
-      border-radius: 10px;
+      border-radius: 30px;
       border: 1px solid vars.$primaryColor;
       direction: rtl;
       padding: 2%;

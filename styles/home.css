@@ -13,12 +13,16 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/bodyBG.png");
+  background-image: url("/images/bodyBG1.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   opacity: 0.09;
   z-index: -1;
+}
+
+#homeBody::before {
+  opacity: 0.09;
 }
 
 main {
@@ -246,6 +250,10 @@ h2 {
   margin: 3% 0 3% 0;
 }
 
+#successStoriesSection i {
+  font-size: 32px;
+}
+
 #newsCards {
   margin-bottom: 5%;
 }
@@ -400,5 +408,11 @@ h2 {
 @media (max-width: 426px) {
   #giftSection .circle {
     display: none;
+  }
+  .post__content {
+    margin-top: -9.8rem;
+  }
+  .post__inside {
+    height: 11.65rem;
   }
 }/*# sourceMappingURL=home.css.map */

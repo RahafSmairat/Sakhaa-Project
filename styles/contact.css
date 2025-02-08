@@ -50,16 +50,21 @@
   margin: 5%;
 }
 #ContactContainer form input {
-  border-radius: 10px;
+  width: 80%;
+  height: 55px;
+  border-radius: 30px;
   border: 1px solid #405712;
   direction: rtl;
-  width: 80%;
-  height: 45px;
-  padding: 2%;
+  padding-right: 5%;
   box-shadow: 0 0 5px #405712;
 }
+#ContactContainer form input:focus, #ContactContainer form textarea:focus {
+  outline: none;
+  border: 3px solid #DAA520;
+  transform: scale(1.03);
+}
 #ContactContainer form textarea {
-  border-radius: 10px;
+  border-radius: 30px;
   border: 1px solid #405712;
   direction: rtl;
   padding: 2%;

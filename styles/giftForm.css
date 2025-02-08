@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+  direction: rtl;
+  width: 90vw;
+  justify-self: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #405712;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #FAFAFA;
+  padding: 100px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #405712;
+}
+
+input:not(#check), select {
+  width: 100%;
+  height: 55px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  direction: rtl;
+  padding-right: 2%;
+  box-shadow: 0 0 5px #405712;
+}
+input:not(#check):focus, select:focus {
+  outline: none;
+  border: 3px solid #DAA520;
+}
+
+input.invalid {
+  background-color: rgba(163, 22, 34, 0.7019607843);
+}
+input.invalid::-moz-placeholder {
+  color: #FAFAFA;
+}
+input.invalid::placeholder {
+  color: #FAFAFA;
+}
+
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #04AA6D;
+}/*# sourceMappingURL=giftForm.css.map */

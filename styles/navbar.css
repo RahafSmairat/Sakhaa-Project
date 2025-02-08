@@ -3,6 +3,11 @@ body {
   font-family: "Cairo", serif !important;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 .navbar {
   font-family: "Cairo", serif !important;
   background-color: #FAFAFA !important;
@@ -11,6 +16,7 @@ body {
 }
 .navbar .navbar-brand {
   width: 10% !important;
+  padding: 0 !important;
 }
 .navbar .navbar-brand img {
   width: 100% !important;
