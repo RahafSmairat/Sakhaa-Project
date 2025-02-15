@@ -17,12 +17,16 @@
   top: -150px;
   box-shadow: 0 0 10px #405712;
   direction: rtl;
+  margin-top: 5%;
 }
 #signUpContainer h2 {
   color: #FAFAFA;
-  text-align: center;
+  justify-self: center;
   direction: rtl;
   margin-bottom: 10%;
+}
+#signUpContainer h2::before {
+  content: none;
 }
 #signUpContainer form {
   display: flex;
@@ -49,7 +53,6 @@
 #signUpContainer form input:focus, #signUpContainer form select:focus {
   outline: none;
   border: 3px solid #DAA520;
-  transform: scale(1.03);
 }
 #signUpContainer form p {
   color: #FAFAFA;

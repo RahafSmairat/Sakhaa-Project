@@ -18,11 +18,15 @@
   top: -150px;
   box-shadow: vars.$boxShadow;
   direction: rtl;
+  margin-top: 5%;
   h2 {
     color: vars.$bodyColor;
-    text-align: center;
+    justify-self: center;
     direction: rtl;
     margin-bottom: 10%;
+    &::before{
+      content: none;
+    }
   }
   form {
     display: flex;
@@ -50,7 +54,6 @@
     input:focus,select:focus{
       outline: none;
       border: 3px solid vars.$secondaryColor;
-      transform: scale(1.03);
     }
 
     p{

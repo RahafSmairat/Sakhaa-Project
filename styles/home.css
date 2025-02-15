@@ -21,6 +21,17 @@ body::before {
   z-index: -1;
 }
 
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #homeBody::before {
   opacity: 0.09;
 }
@@ -33,8 +44,25 @@ main {
 }
 
 h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center !important;
+  position: relative;
   font-weight: bold;
   color: #405712;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #DAA520;
+  height: 10px;
+  width: 100%;
+  content: "";
+  opacity: 0.5;
+  bottom: 7px;
+  z-index: -1;
 }
 
 .mainBtn {
@@ -150,6 +178,7 @@ h2 {
 #ourMission .content {
   width: 60%;
   text-align: right;
+  direction: rtl;
 }
 #ourMission .content p {
   color: #405712;
@@ -237,6 +266,7 @@ h2 {
 }
 #giftSection .content {
   text-align: center;
+  justify-items: center;
 }
 #giftSection .content #giftImg {
   margin-bottom: 3%;
@@ -250,15 +280,16 @@ h2 {
   margin: 3% 0 3% 0;
 }
 
+#successStoriesSection {
+  direction: rtl;
+}
 #successStoriesSection i {
   font-size: 32px;
 }
 
 #newsCards {
   margin-bottom: 5%;
-}
-#newsCards h2 {
-  text-align: center !important;
+  justify-items: center;
 }
 #newsCards .container {
   max-width: 1280px;

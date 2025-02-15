@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
 #regForm {
   background-color: #ffffff;
   margin: 100px auto;
-  padding: 40px;
   width: 70%;
   min-width: 300px;
   direction: rtl;
@@ -13,14 +13,23 @@
   color: #405712;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   background-color: #FAFAFA;
-  padding: 100px;
+  padding: 70px;
   border-radius: 30px;
   box-shadow: 0 0 10px #405712;
 }
-
-input:not(#check), select {
+#regForm button {
+  width: 15%;
+  height: 50px;
+  background-color: #DAA520;
+  color: #FAFAFA;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+#regForm input:not(#check), #regForm select {
   width: 100%;
   height: 55px;
   border-radius: 30px;
@@ -29,26 +38,43 @@ input:not(#check), select {
   padding-right: 2%;
   box-shadow: 0 0 5px #405712;
 }
-input:not(#check):focus, select:focus {
+#regForm input:not(#check):focus, #regForm select:focus {
   outline: none;
   border: 3px solid #DAA520;
 }
-
-input.invalid {
+#regForm textarea {
+  border-radius: 30px;
+  border: 3px solid transparent;
+  direction: rtl;
+  padding: 2%;
+  width: 80%;
+  box-shadow: 0 0 5px #405712;
+}
+#regForm textarea:focus {
+  outline: none;
+  border: 3px solid #DAA520;
+}
+#regForm input.invalid {
   background-color: rgba(163, 22, 34, 0.7019607843);
 }
-input.invalid::-moz-placeholder {
+#regForm input.invalid::-moz-placeholder {
   color: #FAFAFA;
 }
-input.invalid::placeholder {
+#regForm input.invalid::placeholder {
   color: #FAFAFA;
 }
-
-.tab {
+#regForm .tab {
   display: none;
 }
-
-.step {
+#regForm .tab div {
+  width: 40%;
+}
+#regForm .tab h5 {
+  color: #A31621;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+#regForm .step {
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -58,11 +84,9 @@ input.invalid::placeholder {
   display: inline-block;
   opacity: 0.5;
 }
-
-.step.active {
+#regForm .step.active {
   opacity: 1;
 }
-
-.step.finish {
+#regForm .step.finish {
   background-color: #04AA6D;
 }/*# sourceMappingURL=giftForm.css.map */

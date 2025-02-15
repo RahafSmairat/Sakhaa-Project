@@ -20,6 +20,16 @@ body::before {
   opacity: 0.09; 
   z-index: -1; 
 }
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 #homeBody::before{
   opacity: 0.09; 
 }
@@ -29,10 +39,28 @@ main {
   flex-direction: column;
   gap: 200px;
 }
+
 h2 {
+  width: fit-content;
+  text-align: center !important;
+  position: relative;
   font-weight: bold;
   color: vars.$primaryColor;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: vars.$secondaryColor;
+    height: 10px;
+    width: 100%;
+    content: '';
+    opacity: .5;
+    bottom: 7px;
+    z-index: -1;
+  }
 }
+
 .mainBtn {
   width: 140px;
   height: 50px;
@@ -145,6 +173,7 @@ h2 {
   .content {
     width: 60%;
     text-align: right;
+    direction: rtl;
     p {
       color: vars.$primaryColor;
       margin-top: 5%;
@@ -235,6 +264,7 @@ h2 {
   justify-content: space-between;
   .content {
     text-align: center;
+    justify-items: center;
     #giftImg {
       margin-bottom: 3%;
     }
@@ -297,13 +327,12 @@ h2 {
 
 #successStoriesSection{
   i{font-size: 32px;}
+  direction: rtl;
 }
 
 #newsCards{
   margin-bottom: 5%;
-  h2 {
-    text-align: center !important;
-  }
+  justify-items: center;
   .container {
     max-width: 1280px;
     margin: 3rem auto;

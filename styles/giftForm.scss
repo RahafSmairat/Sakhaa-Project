@@ -3,7 +3,6 @@
         #regForm {
             background-color: #ffffff;
             margin: 100px auto;
-            padding: 40px;
             width: 70%;
             min-width: 300px;
             direction: rtl;
@@ -15,21 +14,22 @@
             color: vars.$primaryColor;
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            gap: 40px;
             background-color: vars.$bodyColor;
-            padding: 100px;
+            padding: 70px;
             border-radius: 30px;
             box-shadow: vars.$boxShadow;
-          }
-          
-        //   input {
-        //     padding: 10px;
-        //     width: 100%;
-        //     font-size: 17px;
-        //     font-family: Raleway;
-        //     border: 1px solid #aaaaaa;
-        //   }
 
+            button{
+              width: 15%;
+              height: 50px;
+              background-color: vars.$secondaryColor;
+              color: vars.$bodyColor;
+              border-radius: 30px;
+              border: none;
+              font-size: vars.$buttonFontSize;
+              transition: all 0.5s;
+            }
           input:not(#check),select {
             width: 100%;
             height: 55px;
@@ -44,7 +44,20 @@
                 // transform: scale(1.01);
             }
           }
-          
+          textarea {
+            border-radius: 30px;
+            border: 3px solid transparent;
+            direction: rtl;
+            padding: 2%;
+            width: 80%;
+            box-shadow: vars.$lightBoxShadow;
+          }
+
+          textarea:focus{
+            outline: none;
+            border: 3px solid vars.$secondaryColor;
+          }
+
           input.invalid {
             background-color: vars.$highlighter;
             &::placeholder{
@@ -55,6 +68,17 @@
           
           .tab {
             display: none;
+            div{
+              width: 40%;
+            }
+            // p{
+            //   width: 40%;
+            // }
+            h5{
+              color: vars.$highlightsColor;
+              font-weight: bold;
+              margin-bottom: 3%;
+            }
           }
           
           .step {
@@ -75,3 +99,12 @@
           .step.finish {
             background-color: #04AA6D;
           }
+          }
+          
+        //   input {
+        //     padding: 10px;
+        //     width: 100%;
+        //     font-size: 17px;
+        //     font-family: Raleway;
+        //     border: 1px solid #aaaaaa;
+        //   }

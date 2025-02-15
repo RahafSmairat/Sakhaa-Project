@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 #logInHeader {
-  height: 50vh;
+  height: 40vh !important;
   background-color: #F5F5DC;
   padding: 15px;
 }
 #logInHeader h2 {
   text-align: center;
   position: relative;
-  top: 60%;
+  top: 50%;
+  justify-self: center;
 }
 
 #loginContainer {
@@ -21,12 +22,16 @@
   z-index: 2;
   top: -150px;
   box-shadow: 0 0 10px #405712;
+  margin-top: 5%;
 }
 #loginContainer h2 {
   color: #FAFAFA;
-  text-align: center;
+  justify-self: center;
   direction: rtl;
   margin-bottom: 10%;
+}
+#loginContainer h2::before {
+  content: none;
 }
 #loginContainer form {
   display: flex;
@@ -45,7 +50,6 @@
 #loginContainer form input:focus {
   outline: none;
   border: 3px solid #DAA520;
-  transform: scale(1.03);
 }
 #loginContainer form a {
   color: #FAFAFA;

@@ -51,7 +51,7 @@
       width: 80%;
       height: 55px;
       border-radius: 30px;
-      border: 1px solid vars.$primaryColor;
+      border: 3px solid transparent;
       direction: rtl;
       padding-right: 5%;
       box-shadow: vars.$lightBoxShadow;
@@ -59,11 +59,11 @@
     input:focus, textarea:focus{
       outline: none;
       border: 3px solid vars.$secondaryColor;
-      transform: scale(1.03);
+      // transform: scale(1.03);
     }
     textarea {
       border-radius: 30px;
-      border: 1px solid vars.$primaryColor;
+      border: 3px solid transparent;
       direction: rtl;
       padding: 2%;
       width: 80%;

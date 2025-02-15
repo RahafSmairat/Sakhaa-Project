@@ -3,16 +3,17 @@ showTab(currentTab);
 
 function showTab(n) {
   var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
+  x[n].style.display = "flex";
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "الانتقال إلى الدفع";
+    document.getElementById("nextBtn").style.width ="15%";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "التالي⬅";
   }
   fixStepIndicator(n)
 }
